@@ -7,7 +7,7 @@ Sustav za praćenje narudžbi u studentskom restoranu
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Andrija Novaković | anovakovi21@foi.hr | 000000000 | anovakovic19
+Andrija Novaković | anovakovi21@foi.hr | 0016157287 | anovakovic19
 
 
 ## Opis domene
@@ -21,7 +21,7 @@ hrane.
 softver će omogućiti bolju organizaciju i mogućnost smanjivanja gužvi radi Studenata koji imaju priliku recenzirati jelo koje su netom konzumirali.
 
 ## Zadatak
-
+https://github.com/foivz/pi2024-zadace-anovakovic19/blob/master/Zadatak%20-%20SCVZ.pdf
 
 ## Resursi
 
