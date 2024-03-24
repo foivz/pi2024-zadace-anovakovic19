@@ -1,27 +1,28 @@
 # Inicijalne upute za izradu zadaća
 
-
 # Naziv projekta
-(U redak iznad navedite naziv projekta koji ste dobili za analizu!)
+Sustav za praćenje narudžbi u studentskom restoranu
 
 ## Podaci o studentu
-(Ispod promijenite samo drugi redak tablice!)
 
 Ime i prezime | E-mail adresa (FOI) | JMBAG | Github korisničko ime
 ------------  | ------------------- | ----- | ---------------------
-Ime i prezime | mojaadresa@foi.hr | 000000000 | githubuser
+Andrija Novaković | anovakovi21@foi.hr | 000000000 | anovakovic19
 
 
 ## Opis domene
-(Vlastitim riječima opišite domenu ili problem koji pokriva projekt vaše zadaće!)
+Radi poboljšanja zadovoljstva studenata obrocima koji se poslužuju u varaždinskom
+studentskom restorana, Studentski centar Varaždin (SCVZ) uvodi novi informacijski sustav za
+potporu rada restorana. Novi sustav će nuditi opciju detaljnog praćenja preferencija studenata i
+njihovih povratnih informacija kako bi se kontinuirano poboljšala kvaliteta usluge i ponuda
+hrane. 
 
 ## Specifikacija projekta
-(Vlastitim riječima opišite zahtjeve za izradu ovog programskog proizvoda!)
+softver će omogućiti bolju organizaciju i mogućnost smanjivanja gužvi radi Studenata koji imaju priliku recenzirati jelo koje su netom konzumirali.
 
 ## Zadatak
-(U root repozitorija učitajte zadatak koji ste dobili i potom ovdje stavite link na njegovo otvaranje!)
+
 
 ## Resursi
-(Zadaće je obvezno predati u obliku Wiki stranica na ovom repozitoriju. Slike i druge artefakte koje ćete koristiti na wiki stranicama smjestite u mapu dokumentacije u repozitoriju!)
 
 Svi resursi nalaze se u mapi _Documentation_.
