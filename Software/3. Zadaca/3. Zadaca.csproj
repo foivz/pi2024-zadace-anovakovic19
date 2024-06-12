@@ -58,6 +58,7 @@
     <Compile Include="Frmstudents.Designer.cs">
       <DependentUpon>Frmstudents.cs</DependentUpon>
     </Compile>
+    <Compile Include="models\Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="FrmLogin.resx">

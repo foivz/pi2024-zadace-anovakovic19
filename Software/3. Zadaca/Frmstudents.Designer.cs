@@ -109,6 +109,7 @@
             this.Name = "Frmstudents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izbornik";
+            this.Load += new System.EventHandler(this.Frmstudents_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

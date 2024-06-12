@@ -31,5 +31,10 @@ namespace _3.Zadaca
         {
 
         }
+
+        private void Frmstudents_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
