@@ -62,7 +62,6 @@ namespace _3.Zadaca
             listakategorija.Add("desert");
             cbKategorija.DataSource = listakategorija;
             cbKategorija.SelectedIndex = -1;
-
         }
 
         private void OcistiPolja()

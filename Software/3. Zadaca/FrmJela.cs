@@ -24,10 +24,16 @@ namespace _3.Zadaca
             PrikaziJela();
         }
 
-        private void PrikaziJela()
+        private void PrikaziJela(string naziv = "")
         {
-            List<Jelo> jela = JeloRepository.GetSvaJela();
+            List<Jelo> jela = JeloRepository.GetSvaJelaPoNazivu(naziv);
             dgvJela.DataSource = jela;
+        }
+
+        private void txtPretraziJela_KeyUp(object sender, KeyEventArgs e)
+        {
+            string jelo = txtPretraziJela.Text;
+            PrikaziJela(jelo);
         }
     }
 }

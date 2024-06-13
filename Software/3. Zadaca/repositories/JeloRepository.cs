@@ -27,6 +27,23 @@ namespace _3.Zadaca.repositories
             return jelo;
         }
 
+        public static List<Jelo> GetSvaJelaPoNazivu(string naziv)
+        {
+            List<Jelo> listaJela = new List<Jelo>();
+            string sql = $"SELECT * FROM Jela WHERE naziv LIKE '%{naziv}%'";
+            DB.OpenConnection();
+
+            var reader = DB.GetDataReader(sql);
+            while (reader.Read())
+            {
+                Jelo jelo = CreateObject(reader);
+                listaJela.Add(jelo);
+            }
+            reader.Close();
+            DB.CloseConnection();
+            return listaJela;
+        }
+
         public static List<Jelo> GetSvaJela()
         {
             List<Jelo> listaJela = new List<Jelo>();
