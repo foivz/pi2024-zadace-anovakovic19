@@ -69,6 +69,14 @@ namespace _3.Zadaca.repositories
             DB.CloseConnection();
         }
 
+        public static void DeleteJelo(int jelo)
+        {
+            string sql = $"DELETE FROM Jela WHERE jelo_id = {jelo}";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
         private static Jelo CreateObject(SqlDataReader reader)
         {
             int jelo_id = int.Parse(reader["jelo_id"].ToString());

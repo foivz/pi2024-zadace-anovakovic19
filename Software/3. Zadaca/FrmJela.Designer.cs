@@ -34,6 +34,7 @@
             this.dgvJela = new System.Windows.Forms.DataGridView();
             this.txtPretraziJela = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnObrisiJelo = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvJela)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +69,7 @@
             this.dgvJela.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvJela.Size = new System.Drawing.Size(727, 185);
             this.dgvJela.TabIndex = 0;
+            this.dgvJela.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJela_CellClick);
             // 
             // txtPretraziJela
             // 
@@ -86,11 +88,23 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Pretrazi jela po imenu:";
             // 
+            // btnObrisiJelo
+            // 
+            this.btnObrisiJelo.Enabled = false;
+            this.btnObrisiJelo.Location = new System.Drawing.Point(12, 223);
+            this.btnObrisiJelo.Name = "btnObrisiJelo";
+            this.btnObrisiJelo.Size = new System.Drawing.Size(126, 23);
+            this.btnObrisiJelo.TabIndex = 3;
+            this.btnObrisiJelo.Text = "Obrisi odabrano jelo";
+            this.btnObrisiJelo.UseVisualStyleBackColor = true;
+            this.btnObrisiJelo.Click += new System.EventHandler(this.btnObrisiJelo_Click);
+            // 
             // FrmJela
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(749, 229);
+            this.ClientSize = new System.Drawing.Size(749, 256);
+            this.Controls.Add(this.btnObrisiJelo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPretraziJela);
             this.Controls.Add(this.dgvJela);
@@ -108,5 +122,6 @@
         private System.Windows.Forms.DataGridView dgvJela;
         private System.Windows.Forms.TextBox txtPretraziJela;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnObrisiJelo;
     }
 }
