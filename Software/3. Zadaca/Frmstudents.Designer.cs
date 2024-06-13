@@ -46,7 +46,6 @@
             this.btnBodovi.TabIndex = 2;
             this.btnBodovi.Text = "Prikupljanje bodova";
             this.btnBodovi.UseVisualStyleBackColor = false;
-            this.btnBodovi.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnNarudzba
             // 
@@ -85,7 +84,6 @@
             this.btnKomentar.TabIndex = 5;
             this.btnKomentar.Text = "Povratni komentari";
             this.btnKomentar.UseVisualStyleBackColor = false;
-            this.btnKomentar.Click += new System.EventHandler(this.button4_Click);
             // 
             // lblOdabir
             // 
@@ -116,7 +114,6 @@
             this.Name = "Frmstudents";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Izbornik";
-            this.Load += new System.EventHandler(this.Frmstudents_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

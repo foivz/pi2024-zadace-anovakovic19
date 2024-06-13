@@ -31,13 +31,13 @@
             this.lblNazivJela = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtKomentar = new System.Windows.Forms.RichTextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
-            this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            this.nudOcjenaJela = new System.Windows.Forms.NumericUpDown();
+            this.nudOcjenaKolicineJela = new System.Windows.Forms.NumericUpDown();
+            this.btnOcijeni = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOcjenaJela)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOcjenaKolicineJela)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNazivJela
@@ -67,13 +67,13 @@
             this.label3.TabIndex = 3;
             this.label3.Text = "Ocjena količine jela";
             // 
-            // richTextBox1
+            // rtKomentar
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(15, 114);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(203, 47);
-            this.richTextBox1.TabIndex = 5;
-            this.richTextBox1.Text = "";
+            this.rtKomentar.Location = new System.Drawing.Point(15, 114);
+            this.rtKomentar.Name = "rtKomentar";
+            this.rtKomentar.Size = new System.Drawing.Size(203, 47);
+            this.rtKomentar.TabIndex = 5;
+            this.rtKomentar.Text = "";
             // 
             // label4
             // 
@@ -84,58 +84,59 @@
             this.label4.TabIndex = 6;
             this.label4.Text = "Dodatni komentari/poboljšanja (ako imate)";
             // 
-            // numericUpDown1
+            // nudOcjenaJela
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(130, 41);
-            this.numericUpDown1.Maximum = new decimal(new int[] {
+            this.nudOcjenaJela.Location = new System.Drawing.Point(130, 41);
+            this.nudOcjenaJela.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown1.Minimum = new decimal(new int[] {
+            this.nudOcjenaJela.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(88, 20);
-            this.numericUpDown1.TabIndex = 7;
-            this.numericUpDown1.Value = new decimal(new int[] {
+            this.nudOcjenaJela.Name = "nudOcjenaJela";
+            this.nudOcjenaJela.Size = new System.Drawing.Size(88, 20);
+            this.nudOcjenaJela.TabIndex = 7;
+            this.nudOcjenaJela.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // numericUpDown2
+            // nudOcjenaKolicineJela
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(130, 66);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.nudOcjenaKolicineJela.Location = new System.Drawing.Point(130, 66);
+            this.nudOcjenaKolicineJela.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.nudOcjenaKolicineJela.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(88, 20);
-            this.numericUpDown2.TabIndex = 8;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.nudOcjenaKolicineJela.Name = "nudOcjenaKolicineJela";
+            this.nudOcjenaKolicineJela.Size = new System.Drawing.Size(88, 20);
+            this.nudOcjenaKolicineJela.TabIndex = 8;
+            this.nudOcjenaKolicineJela.Value = new decimal(new int[] {
             1,
             0,
             0,
             0});
             // 
-            // button1
+            // btnOcijeni
             // 
-            this.button1.Location = new System.Drawing.Point(75, 171);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Ocijeni jelo";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOcijeni.Location = new System.Drawing.Point(75, 171);
+            this.btnOcijeni.Name = "btnOcijeni";
+            this.btnOcijeni.Size = new System.Drawing.Size(75, 23);
+            this.btnOcijeni.TabIndex = 9;
+            this.btnOcijeni.Text = "Ocijeni jelo";
+            this.btnOcijeni.UseVisualStyleBackColor = true;
+            this.btnOcijeni.Click += new System.EventHandler(this.btnOcijeni_Click);
             // 
             // FrmOcjenjivanje
             // 
@@ -143,19 +144,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(236, 203);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.numericUpDown2);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.btnOcijeni);
+            this.Controls.Add(this.nudOcjenaKolicineJela);
+            this.Controls.Add(this.nudOcjenaJela);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtKomentar);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblNazivJela);
             this.Name = "FrmOcjenjivanje";
             this.Text = "Ocjeni jelo";
             this.Load += new System.EventHandler(this.FrmOcjenjivanje_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOcjenaJela)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nudOcjenaKolicineJela)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -166,10 +167,10 @@
         private System.Windows.Forms.Label lblNazivJela;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtKomentar;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.NumericUpDown nudOcjenaJela;
+        private System.Windows.Forms.NumericUpDown nudOcjenaKolicineJela;
+        private System.Windows.Forms.Button btnOcijeni;
     }
 }
