@@ -15,6 +15,7 @@ namespace _3.Zadaca
     public partial class FrmJela : Form
     {
         public int odabranoJelo;
+        public string odabranoJeloNaziv;
 
         public FrmJela()
         {
@@ -43,7 +44,9 @@ namespace _3.Zadaca
         {
             DataGridViewRow odabraniRed = dgvJela.Rows[e.RowIndex];
             odabranoJelo = Convert.ToInt32(odabraniRed.Cells["jelo_id"].Value.ToString());
+            odabranoJeloNaziv = odabraniRed.Cells["naziv"].Value.ToString();
             btnObrisiJelo.Enabled = true;
+            btnOcijeniJelo.Enabled = true;
         }
 
         private void btnObrisiJelo_Click(object sender, EventArgs e)
@@ -53,7 +56,14 @@ namespace _3.Zadaca
                 JeloRepository.DeleteJelo(odabranoJelo);
                 PrikaziJela("");
                 btnObrisiJelo.Enabled = false;
+                btnOcijeniJelo.Enabled = false;
             }
+        }
+
+        private void btnOcijeniJelo_Click(object sender, EventArgs e)
+        {
+            FrmOcjenjivanje frmOcjenjivanje = new FrmOcjenjivanje(odabranoJelo, odabranoJeloNaziv);
+            frmOcjenjivanje.ShowDialog();  
         }
     }
 }

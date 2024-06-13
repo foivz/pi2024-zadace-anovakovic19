@@ -67,6 +67,12 @@
     <Compile Include="FrmMeni.Designer.cs">
       <DependentUpon>FrmMeni.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOcjenjivanje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOcjenjivanje.Designer.cs">
+      <DependentUpon>FrmOcjenjivanje.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmstudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,7 @@
     </Compile>
     <Compile Include="models\Jelo.cs" />
     <Compile Include="models\Person.cs" />
+    <Compile Include="models\PovratnaInformacija.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="repositories\JeloRepository.cs" />
@@ -92,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMeni.resx">
       <DependentUpon>FrmMeni.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOcjenjivanje.resx">
+      <DependentUpon>FrmOcjenjivanje.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frmstudents.resx">
       <DependentUpon>Frmstudents.cs</DependentUpon>
