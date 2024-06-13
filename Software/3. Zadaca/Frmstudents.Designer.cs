@@ -40,7 +40,7 @@
             this.btnBodovi.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnBodovi.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnBodovi.Location = new System.Drawing.Point(44, 216);
-            this.btnBodovi.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBodovi.Margin = new System.Windows.Forms.Padding(2);
             this.btnBodovi.Name = "btnBodovi";
             this.btnBodovi.Size = new System.Drawing.Size(142, 80);
             this.btnBodovi.TabIndex = 2;
@@ -54,7 +54,7 @@
             this.btnNarudzba.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNarudzba.ForeColor = System.Drawing.Color.Black;
             this.btnNarudzba.Location = new System.Drawing.Point(320, 216);
-            this.btnNarudzba.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNarudzba.Margin = new System.Windows.Forms.Padding(2);
             this.btnNarudzba.Name = "btnNarudzba";
             this.btnNarudzba.Size = new System.Drawing.Size(141, 80);
             this.btnNarudzba.TabIndex = 3;
@@ -66,7 +66,7 @@
             this.btnMeni.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnMeni.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnMeni.Location = new System.Drawing.Point(44, 39);
-            this.btnMeni.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMeni.Margin = new System.Windows.Forms.Padding(2);
             this.btnMeni.Name = "btnMeni";
             this.btnMeni.Size = new System.Drawing.Size(142, 78);
             this.btnMeni.TabIndex = 4;
@@ -79,7 +79,7 @@
             this.btnKomentar.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnKomentar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnKomentar.Location = new System.Drawing.Point(320, 39);
-            this.btnKomentar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnKomentar.Margin = new System.Windows.Forms.Padding(2);
             this.btnKomentar.Name = "btnKomentar";
             this.btnKomentar.Size = new System.Drawing.Size(141, 78);
             this.btnKomentar.TabIndex = 5;
@@ -110,7 +110,7 @@
             this.Controls.Add(this.btnNarudzba);
             this.Controls.Add(this.btnBodovi);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Frmstudents";
