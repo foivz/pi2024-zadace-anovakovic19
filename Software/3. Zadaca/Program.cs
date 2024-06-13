@@ -16,7 +16,7 @@ namespace _3.Zadaca
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmLogin());
+            Application.Run(new Frmstudents());
         }
     }
 }

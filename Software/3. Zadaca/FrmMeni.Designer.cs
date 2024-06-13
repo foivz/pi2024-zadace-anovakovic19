@@ -39,6 +39,7 @@
             this.btnPrikaziJela.TabIndex = 0;
             this.btnPrikaziJela.Text = "Prikazi sva jela";
             this.btnPrikaziJela.UseVisualStyleBackColor = true;
+            this.btnPrikaziJela.Click += new System.EventHandler(this.btnPrikaziJela_Click);
             // 
             // FrmMeni
             // 

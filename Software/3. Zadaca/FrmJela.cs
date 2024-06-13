@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace _3.Zadaca
 {
-    public partial class FrmMeni : Form
+    public partial class FrmJela : Form
     {
-        public FrmMeni()
+        public FrmJela()
         {
             InitializeComponent();
-        }
-
-        private void btnPrikaziJela_Click(object sender, EventArgs e)
-        {
-            FrmJela frmJela = new FrmJela();
-            frmJela.ShowDialog();
         }
     }
 }
