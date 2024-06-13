@@ -1,4 +1,6 @@
-﻿using System;
+﻿using _3.Zadaca.models;
+using _3.Zadaca.repositories;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +17,17 @@ namespace _3.Zadaca
         public FrmJela()
         {
             InitializeComponent();
+        }
+
+        private void FrmJela_Load(object sender, EventArgs e)
+        {
+            PrikaziJela();
+        }
+
+        private void PrikaziJela()
+        {
+            List<Jelo> jela = JeloRepository.GetSvaJela();
+            dgvJela.DataSource = jela;
         }
     }
 }

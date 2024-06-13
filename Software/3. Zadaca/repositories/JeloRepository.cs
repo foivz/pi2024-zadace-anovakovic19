@@ -32,6 +32,7 @@ namespace _3.Zadaca.repositories
             List<Jelo> listaJela = new List<Jelo>();
             string sql = $"SELECT * FROM Jela";
             DB.OpenConnection();
+
             var reader = DB.GetDataReader(sql);
             while (reader.Read())
             {
@@ -57,6 +58,14 @@ namespace _3.Zadaca.repositories
                 Kategorija = kategorija,
             };
             return jelo;
+        }
+
+        private static void InsertJelo(string Naziv, string Opis, string Kategorija)
+        {
+            string sql = $"INSERT INTO Jela (naziv, opis, kategorija) VALUES ({Naziv}, {Opis}, {Kategorija})";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
         }
     }
 }

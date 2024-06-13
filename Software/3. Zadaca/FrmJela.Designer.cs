@@ -75,6 +75,7 @@
             this.Controls.Add(this.dgvJela);
             this.Name = "FrmJela";
             this.Text = "FrmJela";
+            this.Load += new System.EventHandler(this.FrmJela_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvJela)).EndInit();
             this.ResumeLayout(false);
 
