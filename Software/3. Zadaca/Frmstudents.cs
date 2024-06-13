@@ -36,5 +36,11 @@ namespace _3.Zadaca
         {
 
         }
+
+        private void btnMeni_Click(object sender, EventArgs e)
+        {
+            FrmMeni frmMeni = new FrmMeni();
+            frmMeni.Show();
+        }
     }
 }
