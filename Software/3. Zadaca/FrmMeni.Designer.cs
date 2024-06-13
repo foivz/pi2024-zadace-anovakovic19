@@ -34,7 +34,7 @@
             // 
             // btnPrikaziJela
             // 
-            this.btnPrikaziJela.Location = new System.Drawing.Point(60, 42);
+            this.btnPrikaziJela.Location = new System.Drawing.Point(65, 25);
             this.btnPrikaziJela.Name = "btnPrikaziJela";
             this.btnPrikaziJela.Size = new System.Drawing.Size(102, 23);
             this.btnPrikaziJela.TabIndex = 0;
@@ -44,7 +44,7 @@
             // 
             // btnUnesiJela
             // 
-            this.btnUnesiJela.Location = new System.Drawing.Point(60, 71);
+            this.btnUnesiJela.Location = new System.Drawing.Point(65, 54);
             this.btnUnesiJela.Name = "btnUnesiJela";
             this.btnUnesiJela.Size = new System.Drawing.Size(102, 23);
             this.btnUnesiJela.TabIndex = 1;
@@ -57,7 +57,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(209, 119);
+            this.ClientSize = new System.Drawing.Size(218, 103);
             this.Controls.Add(this.btnUnesiJela);
             this.Controls.Add(this.btnPrikaziJela);
             this.Name = "FrmMeni";

@@ -23,17 +23,29 @@ namespace _3.Zadaca
         {
             List<PovratnaInformacija> listaPovratnihInformacija = PovratnaInformacijaRepository.GetSvePovratneInformacije();
             dgvOcjene.DataSource = listaPovratnihInformacija;
-            dgvOcjene.Columns["PovratnaInformacijaID"].Visible = false;
             PopraviDgv();
         }
 
         private void PopraviDgv()
         {
+            dgvOcjene.Columns["PovratnaInformacijaID"].Visible = false;
+            dgvOcjene.Columns["JeloID"].Visible = false;
             dgvOcjene.Columns["JeloID"].HeaderText = "Jelo";
             dgvOcjene.Columns["OcjenaJela"].HeaderText = "Ocjena jela";
             dgvOcjene.Columns["OcjenaKolicine"].HeaderText = "Ocjena količine";
             dgvOcjene.Columns["Komentar"].HeaderText = "Dodatni komentar/napomene";
             dgvOcjene.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
+            dgvOcjene.Columns.Add("Naziv jela", "Naziv jela");
+            foreach (DataGridViewRow row in dgvOcjene.Rows)
+            {
+                if (row.Cells["JeloID"].Value != null)
+                {
+                    int jeloId = (int)row.Cells["JeloID"].Value;
+                    string nazivJela = JeloRepository.GetJelo(jeloId).Naziv;
+                    row.Cells["Naziv jela"].Value = nazivJela;
+                }
+            }
+            dgvOcjene.Columns["Naziv jela"].DisplayIndex = 0;
         }
     }
 }

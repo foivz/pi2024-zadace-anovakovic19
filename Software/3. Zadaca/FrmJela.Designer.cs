@@ -68,7 +68,7 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvJela.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvJela.Size = new System.Drawing.Size(727, 185);
+            this.dgvJela.Size = new System.Drawing.Size(505, 185);
             this.dgvJela.TabIndex = 0;
             this.dgvJela.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvJela_CellClick);
             // 
@@ -118,7 +118,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Info;
-            this.ClientSize = new System.Drawing.Size(749, 256);
+            this.ClientSize = new System.Drawing.Size(533, 256);
             this.Controls.Add(this.btnOcijeniJelo);
             this.Controls.Add(this.btnObrisiJelo);
             this.Controls.Add(this.label1);
