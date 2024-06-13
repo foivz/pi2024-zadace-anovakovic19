@@ -90,13 +90,14 @@
             // 
             // btnObrisiJelo
             // 
+            this.btnObrisiJelo.BackColor = System.Drawing.Color.Transparent;
             this.btnObrisiJelo.Enabled = false;
             this.btnObrisiJelo.Location = new System.Drawing.Point(12, 223);
             this.btnObrisiJelo.Name = "btnObrisiJelo";
             this.btnObrisiJelo.Size = new System.Drawing.Size(126, 23);
             this.btnObrisiJelo.TabIndex = 3;
             this.btnObrisiJelo.Text = "Obrisi odabrano jelo";
-            this.btnObrisiJelo.UseVisualStyleBackColor = true;
+            this.btnObrisiJelo.UseVisualStyleBackColor = false;
             this.btnObrisiJelo.Click += new System.EventHandler(this.btnObrisiJelo_Click);
             // 
             // FrmJela
