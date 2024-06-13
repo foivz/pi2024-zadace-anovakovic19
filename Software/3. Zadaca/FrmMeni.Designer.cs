@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.btnPrikaziJela = new System.Windows.Forms.Button();
+            this.btnUnesiJela = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnPrikaziJela
@@ -41,11 +42,22 @@
             this.btnPrikaziJela.UseVisualStyleBackColor = true;
             this.btnPrikaziJela.Click += new System.EventHandler(this.btnPrikaziJela_Click);
             // 
+            // btnUnesiJela
+            // 
+            this.btnUnesiJela.Location = new System.Drawing.Point(30, 67);
+            this.btnUnesiJela.Name = "btnUnesiJela";
+            this.btnUnesiJela.Size = new System.Drawing.Size(102, 23);
+            this.btnUnesiJela.TabIndex = 1;
+            this.btnUnesiJela.Text = "Unesi jela";
+            this.btnUnesiJela.UseVisualStyleBackColor = true;
+            this.btnUnesiJela.Click += new System.EventHandler(this.btnUnesiJela_Click);
+            // 
             // FrmMeni
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnUnesiJela);
             this.Controls.Add(this.btnPrikaziJela);
             this.Name = "FrmMeni";
             this.Text = "FrmMeni";
@@ -56,5 +68,6 @@
         #endregion
 
         private System.Windows.Forms.Button btnPrikaziJela;
+        private System.Windows.Forms.Button btnUnesiJela;
     }
 }

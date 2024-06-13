@@ -22,5 +22,11 @@ namespace _3.Zadaca
             FrmJela frmJela = new FrmJela();
             frmJela.ShowDialog();
         }
+
+        private void btnUnesiJela_Click(object sender, EventArgs e)
+        {
+            FrmUnosJela frmUnosJela = new FrmUnosJela();
+            frmUnosJela.ShowDialog();
+        }
     }
 }
