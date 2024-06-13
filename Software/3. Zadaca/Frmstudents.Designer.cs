@@ -31,7 +31,7 @@
             this.btnBodovi = new System.Windows.Forms.Button();
             this.btnNarudzba = new System.Windows.Forms.Button();
             this.btnMeni = new System.Windows.Forms.Button();
-            this.btnKomentar = new System.Windows.Forms.Button();
+            this.btnPrikazKomentara = new System.Windows.Forms.Button();
             this.lblOdabir = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -73,17 +73,18 @@
             this.btnMeni.UseVisualStyleBackColor = false;
             this.btnMeni.Click += new System.EventHandler(this.btnMeni_Click);
             // 
-            // btnKomentar
+            // btnPrikazKomentara
             // 
-            this.btnKomentar.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnKomentar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnKomentar.Location = new System.Drawing.Point(320, 39);
-            this.btnKomentar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnKomentar.Name = "btnKomentar";
-            this.btnKomentar.Size = new System.Drawing.Size(141, 78);
-            this.btnKomentar.TabIndex = 5;
-            this.btnKomentar.Text = "Povratni komentari";
-            this.btnKomentar.UseVisualStyleBackColor = false;
+            this.btnPrikazKomentara.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnPrikazKomentara.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPrikazKomentara.Location = new System.Drawing.Point(320, 39);
+            this.btnPrikazKomentara.Margin = new System.Windows.Forms.Padding(2);
+            this.btnPrikazKomentara.Name = "btnPrikazKomentara";
+            this.btnPrikazKomentara.Size = new System.Drawing.Size(141, 78);
+            this.btnPrikazKomentara.TabIndex = 5;
+            this.btnPrikazKomentara.Text = "Povratni komentari";
+            this.btnPrikazKomentara.UseVisualStyleBackColor = false;
+            this.btnPrikazKomentara.Click += new System.EventHandler(this.btnPrikazKomentara_Click);
             // 
             // lblOdabir
             // 
@@ -103,7 +104,7 @@
             this.BackColor = System.Drawing.SystemColors.Info;
             this.ClientSize = new System.Drawing.Size(488, 342);
             this.Controls.Add(this.lblOdabir);
-            this.Controls.Add(this.btnKomentar);
+            this.Controls.Add(this.btnPrikazKomentara);
             this.Controls.Add(this.btnMeni);
             this.Controls.Add(this.btnNarudzba);
             this.Controls.Add(this.btnBodovi);
@@ -124,7 +125,7 @@
         private System.Windows.Forms.Button btnBodovi;
         private System.Windows.Forms.Button btnNarudzba;
         private System.Windows.Forms.Button btnMeni;
-        private System.Windows.Forms.Button btnKomentar;
+        private System.Windows.Forms.Button btnPrikazKomentara;
         private System.Windows.Forms.Label lblOdabir;
     }
 }

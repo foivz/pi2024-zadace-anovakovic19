@@ -22,5 +22,11 @@ namespace _3.Zadaca
             FrmMeni frmMeni = new FrmMeni();
             frmMeni.Show();
         }
+
+        private void btnPrikazKomentara_Click(object sender, EventArgs e)
+        {
+            FrmPrikazPovratnihInformacija frmPrikazPovratnihInformacija = new FrmPrikazPovratnihInformacija();
+            frmPrikazPovratnihInformacija.ShowDialog();
+        }
     }
 }

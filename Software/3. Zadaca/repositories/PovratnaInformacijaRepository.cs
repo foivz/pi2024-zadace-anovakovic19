@@ -27,7 +27,7 @@ namespace _3.Zadaca.repositories
             return povratna;
         }
 
-        public static List<PovratnaInformacija> GetSvePovratneInformacije(string naziv)
+        public static List<PovratnaInformacija> GetSvePovratneInformacije()
         {
             List<PovratnaInformacija> listaPovratnihInformacija = new List<PovratnaInformacija>();
             string sql = $"SELECT * FROM Povratne_Informacije";

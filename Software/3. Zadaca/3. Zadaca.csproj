@@ -73,6 +73,12 @@
     <Compile Include="FrmOcjenjivanje.Designer.cs">
       <DependentUpon>FrmOcjenjivanje.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPrikazPovratnihInformacija.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPrikazPovratnihInformacija.Designer.cs">
+      <DependentUpon>FrmPrikazPovratnihInformacija.cs</DependentUpon>
+    </Compile>
     <Compile Include="Frmstudents.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmOcjenjivanje.resx">
       <DependentUpon>FrmOcjenjivanje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPrikazPovratnihInformacija.resx">
+      <DependentUpon>FrmPrikazPovratnihInformacija.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Frmstudents.resx">
       <DependentUpon>Frmstudents.cs</DependentUpon>
