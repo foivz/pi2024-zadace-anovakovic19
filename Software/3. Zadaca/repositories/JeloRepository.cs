@@ -44,6 +44,14 @@ namespace _3.Zadaca.repositories
             return listaJela;
         }
 
+        public static void InsertJelo(string Naziv, string Opis, string Kategorija)
+        {
+            string sql = $"INSERT INTO Jela (naziv, opis, kategorija) VALUES ('{Naziv}', '{Opis}', '{Kategorija}')";
+            DB.OpenConnection();
+            DB.ExecuteCommand(sql);
+            DB.CloseConnection();
+        }
+
         private static Jelo CreateObject(SqlDataReader reader)
         {
             int jelo_id = int.Parse(reader["jelo_id"].ToString());
@@ -58,14 +66,6 @@ namespace _3.Zadaca.repositories
                 Kategorija = kategorija,
             };
             return jelo;
-        }
-
-        private static void InsertJelo(string Naziv, string Opis, string Kategorija)
-        {
-            string sql = $"INSERT INTO Jela (naziv, opis, kategorija) VALUES ({Naziv}, {Opis}, {Kategorija})";
-            DB.OpenConnection();
-            DB.ExecuteCommand(sql);
-            DB.CloseConnection();
         }
     }
 }

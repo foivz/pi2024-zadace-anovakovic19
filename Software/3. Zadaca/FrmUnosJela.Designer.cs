@@ -94,6 +94,7 @@
             this.btnUnesi.TabIndex = 6;
             this.btnUnesi.Text = "Unesi";
             this.btnUnesi.UseVisualStyleBackColor = true;
+            this.btnUnesi.Click += new System.EventHandler(this.btnUnesi_Click);
             // 
             // FrmUnosJela
             // 
@@ -109,6 +110,7 @@
             this.Controls.Add(this.txtNazivJela);
             this.Name = "FrmUnosJela";
             this.Text = "Unos jela";
+            this.Load += new System.EventHandler(this.FrmUnosJela_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
